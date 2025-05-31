@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Chess Master</h1>
+    <p>Strategic battles await</p>
+  </div>
+  
+  <div class="game-container">
+    <div class="game-header">
+      <div class="player-turn">
+        <div class="turn-indicator"></div>
+        <div class="status" id="status">White's turn</div>
+      </div>
+      <div class="game-info">
+        <span>🏆 Classic</span>
+      </div>
+    </div>
+    
+    <div class="board-container">
+      <div class="board" id="board"></div>
+    </div>
+    
+    <div class="controls">
+      <button id="restart-btn">🔄 New Game</button>
+      <button id="flip-btn" class="flip-button">🔄 Flip Board</button>
+      <button id="undo-btn" class="undo-button">↩️ Undo</button>
+    </div>
+    
+    <div class="history" id="move-history">
+      <div class="move-history" id="moves-container"></div>
+    </div>
+  </div>
+  
+  <div class="promotion-modal" id="promotion-modal">
+    <div class="promotion-pieces" id="promotion-pieces"></div>
+  </div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
